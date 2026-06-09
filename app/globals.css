@@ -1,12 +1,35 @@
 @import "tailwindcss";
 
+:root {
+  --blue: #25799B;
+  --light-blue: #A2C5D8;
+  --red: #CB1B03;
+  --beige: #F7E6CB;
+
+  --background: #ffffff;
+  --foreground: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #F7E6CB;
-  color: #1a1a1a;
-  font-family: Inter, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
 }
 
 ::selection {
-  background: #CB1B03;
+  background: var(--red);
   color: white;
 }
